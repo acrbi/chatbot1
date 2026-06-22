@@ -1,0 +1,9 @@
+[
+  { "patterns": ["hola", "buenas", "hey"], "response": "¡Hola! ¿En qué puedo ayudarte hoy?" },
+  { "patterns": ["horario", "hora", "abren"], "response": "Nuestro horario es de 9am a 6pm, de lunes a viernes." },
+  { "patterns": ["precio", "costo", "cuanto cuesta"], "response": "Los precios varían según el servicio. ¿Podrías indicarme cuál te interesa?" },
+  { "patterns": ["contacto", "telefono", "email"], "response": "Puedes contactarnos al +51 999 999 999 o info@empresa.com" },
+  { "patterns": ["ubicacion", "direccion", "donde estan"], "response": "Estamos ubicados en Av. Principal 123, Lima." },
+  { "patterns": ["ventas", "productos", "catalogo"], "response": "Te contactamos con un representant de ventas." },
+  { "patterns": ["cliente", "pedido", "servicio al cliente"], "response": "Te contactamos con un asesor de soporte al cliente." }
+]
