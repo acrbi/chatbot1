@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: chatbot_frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - chatbot-network
+
+  backend:
+    build: ./backend
+    container_name: chatbot_backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    networks:
+      - chatbot-network
+    restart: unless-stopped
+
+networks:
+  chatbot-network:
+    driver: bridge
